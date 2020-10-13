@@ -1,12 +1,12 @@
 <resources>
-    <string name="app_name">Formulario</string>
-    <string name="formnombre">Nombre Completo</string>
-    <string name="formtel">Telefono</string>
-    <string name="formemail">Email</string>
-    <string name="formdesc">Descripcion Contacto</string>
-    <string name="formconfirm">Confirmar Datos</string>
-    <string name="editform">Editar Datos</string>
-    <string name="formfechanac">Fecha Nacimiento:</string>
-    <string name="btnSig">Siguiente</string>
+<string name="app_name">Actividad formulario android</string>
+<string name="nombre_completo">Nombre Completo </string>
+<string name="telefono">Telefono: </string>
+<string name="email">Email: </string>
+<string name="descripcion">Descripcion Contacto: </string>
+<string name="confirmar_datos">Confirmar Datos</string>
+<string name="editar">Editar Datos</string>
+<string name="fecha_nacimiento">Fecha Nacimiento: </string>
+<string name="siguiente">Siguiente</string>
 
 </resources>

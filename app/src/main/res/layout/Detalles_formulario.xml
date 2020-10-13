@@ -8,12 +8,12 @@
     android:paddingLeft="@dimen/left"
     android:paddingTop="@dimen/top"
     android:paddingRight="@dimen/right"
-    tools:context=".Confirmacion">
+    tools:context=".Detalles_formulario">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/formconfirm"
+        android:text="@string/confirmar_datos"
         android:textColor="@color/textPrimary"
         android:textSize="@dimen/titulo"
         >
@@ -39,7 +39,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="@string/formfechanac"
+            android:text="@string/fecha_nacimiento"
             android:textSize="@dimen/formulario"
             android:textColor="@color/textPrimary"
             android:layout_gravity="center_vertical">
@@ -66,7 +66,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="@string/formtel"
+            android:text="@string/telefono"
             android:textSize="@dimen/formulario"
             android:textColor="@color/textPrimary"
             android:layout_gravity="center_vertical">
@@ -89,7 +89,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/formemail"
+            android:text="@string/email"
             android:textColor="@color/textPrimary"
             android:textSize="@dimen/formulario"
             android:layout_gravity="center_vertical">
@@ -112,7 +112,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/formdesc"
+            android:text="@string/descripcion"
             android:textColor="@color/textPrimary"
             android:textSize="@dimen/formulario"
             android:layout_gravity="center_vertical">
@@ -131,7 +131,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/MiBotonRaised"
-        android:text="@string/editform"
+        android:text="@string/editar"
         android:onClick="editar">
 
     </androidx.appcompat.widget.AppCompatButton>

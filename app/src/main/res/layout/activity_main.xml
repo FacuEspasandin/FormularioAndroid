@@ -19,7 +19,7 @@
             android:id="@+id/tvNombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/formnombre"
+            android:text="@string/nombre_completo"
             android:textSize="@dimen/formulario"
             android:textColor="@color/textPrimary"
             android:layout_gravity="center_vertical">
@@ -31,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:hint="Santiago Bonilla" />
+            android:hint="Nombre completo" />
 
     </LinearLayout>
 
@@ -55,7 +55,7 @@
             android:id="@+id/tvTel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/formtel"
+            android:text="@string/telefono"
             android:textColor="@color/textPrimary"
             android:textSize="@dimen/formulario"
             android:layout_gravity="center_vertical">
@@ -67,7 +67,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:hint="123456789" />
+            android:hint="+598 97 123 456" />
     </LinearLayout>
 
     <LinearLayout
@@ -79,7 +79,7 @@
             android:id="@+id/tvEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/formemail"
+            android:text="@string/email"
             android:textColor="@color/textPrimary"
             android:textSize="@dimen/formulario"
             android:layout_gravity="center_vertical">
@@ -91,7 +91,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:hint="santiago@hotmail.com" />
+            android:hint="example@gmial.com" />
     </LinearLayout>
 
     <LinearLayout
@@ -103,7 +103,7 @@
             android:id="@+id/tvDesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/formdesc"
+            android:text="@string/descripcion"
             android:textColor="@color/textPrimary"
             android:textSize="@dimen/formulario"
             android:layout_gravity="center_vertical">
@@ -115,7 +115,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:hint="Lo conoci en el restaurante de comida italiana." />
+            android:hint="Inserte una descripcion" />
     </LinearLayout>
 
 
@@ -125,7 +125,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:theme="@style/MiBotonRaised"
-        android:text="@string/btnSig">
+        android:text="@string/siguiente">
     </androidx.appcompat.widget.AppCompatButton>
 
 

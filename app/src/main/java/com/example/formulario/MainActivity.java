@@ -10,15 +10,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText edNombre;
-    EditText edTel;
-    EditText edEmail;
-    DatePicker edFechaNac;
-    EditText edDesc;
+    EditText ednombre;
+    EditText edTelefono;
+    EditText edemail;
+    DatePicker edfecha_nacimiento;
+    EditText eddescripcion;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -30,26 +29,26 @@ public class MainActivity extends AppCompatActivity {
             Bundle edit_datos = getIntent().getExtras();
 
             String nombre = edit_datos.getString("nombre");
-            String tel = edit_datos.getString("tel");
-            String fechaNac = edit_datos.getString("fechanac");
+            String tel = edit_datos.getString("telefono");
+            String fechaNac = edit_datos.getString("fecha_nacimiento");
             String email = edit_datos.getString("email");
-            String descripcion = edit_datos.getString("desc");
+            String descripcion = edit_datos.getString("descripcion");
 
-            edNombre = (EditText) findViewById(R.id.edNombre);
-            edTel = (EditText) findViewById(R.id.edTel);
-            edEmail = (EditText) findViewById(R.id.edEmail);
-            edFechaNac = (DatePicker) findViewById(R.id.dpCalendario);
-            edDesc = (EditText) findViewById(R.id.edDesc);
+            ednombre = (EditText) findViewById(R.id.edNombre);
+            edTelefono = (EditText) findViewById(R.id.edTel);
+            edemail = (EditText) findViewById(R.id.edEmail);
+            edfecha_nacimiento = (DatePicker) findViewById(R.id.dpCalendario);
+            eddescripcion = (EditText) findViewById(R.id.edDesc);
 
-            edNombre.setText(nombre);
-            edTel.setText(tel);
-            edEmail.setText(email);
-            edDesc.setText(descripcion);
+            ednombre.setText(nombre);
+            edTelefono.setText(tel);
+            edemail.setText(email);
+            eddescripcion.setText(descripcion);
             String[] fecha = fechaNac.split("/",0);
             int dia = Integer.valueOf(fecha[0]);
             int mes = Integer.valueOf(fecha[1]);
             int año = Integer.valueOf(fecha[2]);
-            edFechaNac.init(año, mes-1, dia, null);
+            edfecha_nacimiento.init(año, mes-1, dia, null);
 
         } catch (Exception e){
 
@@ -66,12 +65,12 @@ public class MainActivity extends AppCompatActivity {
                 DatePicker dpCalendario = (DatePicker) findViewById(R.id.dpCalendario);
                 EditText edDesc = (EditText) findViewById(R.id.edDesc);
 
-                Intent intent = new Intent(MainActivity.this, Confirmacion.class);
-                intent.putExtra(getResources().getString(R.string.formnombre),edNombre.getText().toString());
-                intent.putExtra(getResources().getString(R.string.formtel),edTel.getText().toString());
-                intent.putExtra(getResources().getString(R.string.formfechanac),dpCalendario.getDayOfMonth() + "/" + Integer.parseInt(String.valueOf(dpCalendario.getMonth()+1)) + "/" + dpCalendario.getYear());
-                intent.putExtra(getResources().getString(R.string.formemail),edEmail.getText().toString());
-                intent.putExtra(getResources().getString(R.string.formdesc),edDesc.getText().toString());
+                Intent intent = new Intent(MainActivity.this, Detalles_formulario.class);
+                intent.putExtra(getResources().getString(R.string.nombre_completo),edNombre.getText().toString());
+                intent.putExtra(getResources().getString(R.string.telefono),edTel.getText().toString());
+                intent.putExtra(getResources().getString(R.string.fecha_nacimiento),dpCalendario.getDayOfMonth() + "/" + Integer.parseInt(String.valueOf(dpCalendario.getMonth()+1)) + "/" + dpCalendario.getYear());
+                intent.putExtra(getResources().getString(R.string.email),edEmail.getText().toString());
+                intent.putExtra(getResources().getString(R.string.descripcion),edDesc.getText().toString());
 
                 startActivity(intent);
                 finish();
