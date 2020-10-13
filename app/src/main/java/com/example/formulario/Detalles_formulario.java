@@ -18,7 +18,7 @@ public class Detalles_formulario extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.Detalles_formulario);
+        setContentView(R.layout.detalles_formulario);
 
         Bundle datos_formulario = getIntent().getExtras();
 
